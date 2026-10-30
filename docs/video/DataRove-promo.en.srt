@@ -1,0 +1,247 @@
+1
+00:00:00,500 --> 00:00:01,258
+Meet DataRove.
+
+2
+00:00:01,658 --> 00:00:03,374
+It's one app for all your databases.
+
+3
+00:00:03,374 --> 00:00:07,567
+Your backups actually get checked, and you can reach everything from your phone, safely.
+
+4
+00:00:10,491 --> 00:00:14,485
+MySQL, Postgres, SQLite, SQL Server, MongoDB, Redis.
+
+5
+00:00:14,485 --> 00:00:16,559
+They all live side by side.
+
+6
+00:00:16,959 --> 00:00:20,869
+The overview shows your connections, what's scheduled, and how the last backups went.
+
+7
+00:00:21,269 --> 00:00:24,787
+Passwords are encrypted with a key that never leaves this computer.
+
+8
+00:00:24,787 --> 00:00:26,520
+SSH tunnels and TLS are built in.
+
+9
+00:00:32,082 --> 00:00:33,640
+Open a table and scroll through it.
+
+10
+00:00:33,640 --> 00:00:35,822
+Sort the tree by size, so the big ones stand out.
+
+11
+00:00:37,932 --> 00:00:39,701
+Filter, then just edit the cells.
+
+12
+00:00:49,551 --> 00:00:51,977
+Before anything's saved, you see the exact SQL.
+
+13
+00:00:51,977 --> 00:00:53,991
+It all goes through in one transaction.
+
+14
+00:00:55,257 --> 00:00:55,907
+Prefer a form?
+
+15
+00:00:55,907 --> 00:00:57,858
+Every column gets the right kind of input.
+
+16
+00:00:59,571 --> 00:01:02,569
+For a foreign key, pick the related row instead of typing an ID.
+
+17
+00:01:06,328 --> 00:01:08,000
+The SQL editor knows your schema.
+
+18
+00:01:08,000 --> 00:01:10,584
+It completes tables, columns and joins as you type.
+
+19
+00:01:16,304 --> 00:01:16,675
+Run it.
+
+20
+00:01:16,675 --> 00:01:20,285
+Turn the result into a chart, or read the query plan in plain words.
+
+21
+00:01:22,259 --> 00:01:26,953
+Everything you run is kept in the execution history, by connection and by table, so you can find it again.
+
+22
+00:01:31,795 --> 00:01:33,968
+See the whole database as an ER diagram.
+
+23
+00:01:34,405 --> 00:01:37,488
+Compare two databases, and get the script that brings them in line.
+
+24
+00:01:42,751 --> 00:01:47,058
+Change a table's structure in a designer: columns, types, defaults and indexes.
+
+25
+00:01:47,458 --> 00:01:49,717
+You review the generated SQL before it runs.
+
+26
+00:01:54,778 --> 00:01:58,905
+Export or import millions of rows as CSV, JSON or SQL.
+
+27
+00:01:59,696 --> 00:02:03,938
+It runs in the background with live progress, and picks up where it left off if the connection drops.
+
+28
+00:02:10,303 --> 00:02:11,689
+Schedule backups to files.
+
+29
+00:02:11,689 --> 00:02:15,902
+Compress them, encrypt them, and use the native tools or the built-in exporter.
+
+30
+00:02:16,302 --> 00:02:19,398
+Every new file is read back and checked, right after it's written.
+
+31
+00:02:22,742 --> 00:02:26,016
+Or sync one database into another, even across database types.
+
+32
+00:02:26,016 --> 00:02:30,029
+Each table lands completely, or not at all, and the row counts are verified.
+
+33
+00:02:30,429 --> 00:02:33,285
+If something fails, retry just the part that failed.
+
+34
+00:02:33,285 --> 00:02:36,140
+And if pg_dump is missing, it installs in one click.
+
+35
+00:02:37,403 --> 00:02:38,821
+Restoring is just as easy.
+
+36
+00:02:38,821 --> 00:02:42,313
+Pick a backup file, choose any connection, and restore it there.
+
+37
+00:02:42,713 --> 00:02:45,832
+Incremental sync copies only the rows that changed since the last run.
+
+38
+00:02:50,765 --> 00:02:55,957
+On production, DataRove saves the affected rows before an UPDATE, a DELETE or a DROP touches them.
+
+39
+00:02:59,124 --> 00:02:59,915
+Made a mistake?
+
+40
+00:02:59,915 --> 00:03:01,023
+Undo it in one click.
+
+41
+00:03:05,907 --> 00:03:09,622
+The server monitor shows sessions, queries per second and slow queries.
+
+42
+00:03:10,022 --> 00:03:15,605
+When a backup fails or a server goes down, you get a message in Feishu, DingTalk, WeCom, Slack or Discord.
+
+43
+00:03:20,759 --> 00:03:25,781
+Let Claude Code, Cursor or Codex read your schema and run read-only queries, over MCP.
+
+44
+00:03:26,187 --> 00:03:27,776
+You choose which connections they see.
+
+45
+00:03:27,776 --> 00:03:30,954
+They never get a password, and every query they run shows up in the history.
+
+46
+00:03:34,008 --> 00:03:35,475
+Your phone gets the same app.
+
+47
+00:03:35,475 --> 00:03:36,639
+Scan a QR code to pair.
+
+48
+00:03:36,639 --> 00:03:37,550
+No account needed.
+
+49
+00:03:39,526 --> 00:03:42,197
+On the same Wi-Fi, it connects straight to your computer.
+
+50
+00:03:42,197 --> 00:03:45,759
+When you're out, it goes through a relay that only ever sees encrypted data.
+
+51
+00:03:46,159 --> 00:03:50,785
+It's end-to-end encrypted, passwords stay on your computer, and each phone gets its own permissions.
+
+52
+00:03:52,085 --> 00:03:52,983
+No computer nearby?
+
+53
+00:03:52,983 --> 00:03:55,630
+The Android app can connect to your databases by itself.
+
+54
+00:03:56,037 --> 00:03:58,016
+Passwords and backups stay on the phone.
+
+55
+00:03:58,016 --> 00:04:00,488
+Every account includes one computer and one phone.
+
+56
+00:04:03,410 --> 00:04:04,756
+There's a key browser for Redis.
+
+57
+00:04:08,837 --> 00:04:12,205
+And a command palette that finds any table, connection or action.
+
+58
+00:04:12,605 --> 00:04:14,780
+Pick from ten themes and fifteen languages.
+
+59
+00:04:16,243 --> 00:04:19,978
+And a background service keeps your scheduled backups running, even with the window closed.
+
+60
+00:04:21,278 --> 00:04:21,778
+DataRove.
+
+61
+00:04:21,778 --> 00:04:24,944
+For macOS, Windows and Linux, with an app for your phone.
+
+62
+00:04:25,344 --> 00:04:26,000
+Get it on GitHub.

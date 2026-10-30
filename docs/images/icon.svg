@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- macOS app icon grid: 824px rounded square centred on a 1024 canvas.
+       Neon three-tier database with a sync orbit passing through it. -->
+  <defs>
+    <radialGradient id="bg" cx=".5" cy=".38" r=".75">
+      <stop offset="0" stop-color="#1f1b4d"/>
+      <stop offset=".55" stop-color="#0e0d26"/>
+      <stop offset="1" stop-color="#050510"/>
+    </radialGradient>
+    <radialGradient id="halo" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity=".55"/>
+      <stop offset=".6" stop-color="#4f46e5" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#4f46e5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="halo2" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fade" cx=".5" cy=".45" r=".55">
+      <stop offset="0" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="gridMask"><rect x="100" y="100" width="824" height="824" fill="url(#fade)"/></mask>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse" x="104" y="104">
+      <path d="M48 0H0V48" fill="none" stroke="#a5b4fc" stroke-opacity=".14" stroke-width="2"/>
+    </pattern>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".35"/>
+      <stop offset=".4" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity=".25"/>
+    </linearGradient>
+
+    <!-- Tier side walls: dark edges, lit centre (reads as a cylinder). -->
+    <linearGradient id="s1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0e5a7a"/><stop offset=".42" stop-color="#22d3ee"/>
+      <stop offset=".62" stop-color="#67e8f9"/><stop offset="1" stop-color="#0b4a66"/>
+    </linearGradient>
+    <linearGradient id="s2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3b1d8f"/><stop offset=".42" stop-color="#7c5cff"/>
+      <stop offset=".62" stop-color="#a78bfa"/><stop offset="1" stop-color="#2e1670"/>
+    </linearGradient>
+    <linearGradient id="s3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6b1350"/><stop offset=".42" stop-color="#e93ea6"/>
+      <stop offset=".62" stop-color="#f472b6"/><stop offset="1" stop-color="#5a0f44"/>
+    </linearGradient>
+    <linearGradient id="cap" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ecfeff"/><stop offset=".5" stop-color="#a5f3fc"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+    <linearGradient id="trail" gradientUnits="userSpaceOnUse" x1="-60" y1="0" x2="311" y2="0">
+      <stop offset="0" stop-color="#67e8f9" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="1"/>
+    </linearGradient>
+    <radialGradient id="spark" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".25" stop-color="#cffafe" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#05040f" flood-opacity=".5"/>
+    </filter>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="9" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="34"/>
+    </filter>
+    <!-- Orbit is drawn in two halves: the back half sits behind the stack. -->
+    <clipPath id="back"><rect x="-1000" y="-1000" width="2000" height="1000"/></clipPath>
+    <clipPath id="front"><rect x="-1000" y="0" width="2000" height="1000"/></clipPath>
+    <clipPath id="tile"><rect x="100" y="100" width="824" height="824" rx="184"/></clipPath>
+  </defs>
+  <g filter="url(#shadow)">
+    <rect x="100" y="100" width="824" height="824" rx="184" fill="url(#bg)"/>
+  </g>
+  <g clip-path="url(#tile)">
+    <rect x="100" y="100" width="824" height="824" fill="url(#grid)" mask="url(#gridMask)"/>
+    <circle cx="512" cy="500" r="330" fill="url(#halo)"/>
+    <circle cx="290" cy="250" r="240" fill="url(#halo2)"/>
+    <ellipse cx="512" cy="800" rx="230" ry="34" fill="#8b5cf6" opacity=".6" filter="url(#soft)"/>
+    <rect x="322" y="270" width="380" height="480" rx="140" fill="#6d5cff" opacity=".45" filter="url(#soft)"/>
+  </g>
+
+  <!-- Orbit, back half (behind the stack). -->
+  <g transform="translate(512 520) rotate(-14)">
+    <ellipse rx="380" ry="110" fill="none" stroke="url(#ring)" stroke-width="12" opacity=".4" clip-path="url(#back)"/>
+    <circle cx="-357" cy="-37.6" r="26" fill="url(#spark)" opacity=".9"/>
+    <circle cx="-357" cy="-37.6" r="7" fill="#fbcfe8"/>
+  </g>
+
+  <!-- Stack, bottom tier first so upper tiers overlap. -->
+  <g stroke-linejoin="round">
+    <ellipse cx="512" cy="598" rx="200" ry="58" fill="#f472b6" stroke="#fbcfe8" stroke-opacity=".6" stroke-width="3"/>
+    <path d="M312 598A200 58 0 0 0 712 598V718A200 58 0 0 1 312 718Z" fill="url(#s3)"/>
+    <path d="M312 718A200 58 0 0 0 712 718" fill="none" stroke="#fbcfe8" stroke-opacity=".55" stroke-width="4"/>
+
+    <ellipse cx="512" cy="454" rx="200" ry="58" fill="#a78bfa" stroke="#ddd6fe" stroke-opacity=".6" stroke-width="3"/>
+    <path d="M312 454A200 58 0 0 0 712 454V574A200 58 0 0 1 312 574Z" fill="url(#s2)"/>
+    <path d="M312 574A200 58 0 0 0 712 574" fill="none" stroke="#ddd6fe" stroke-opacity=".55" stroke-width="4"/>
+
+    <path d="M312 310A200 58 0 0 0 712 310V430A200 58 0 0 1 312 430Z" fill="url(#s1)"/>
+    <path d="M312 430A200 58 0 0 0 712 430" fill="none" stroke="#cffafe" stroke-opacity=".6" stroke-width="4"/>
+    <ellipse cx="512" cy="310" rx="200" ry="58" fill="url(#cap)"/>
+    <ellipse cx="512" cy="310" rx="200" ry="58" fill="none" stroke="#fff" stroke-opacity=".9" stroke-width="4"/>
+    <ellipse cx="512" cy="310" rx="128" ry="34" fill="none" stroke="#0891b2" stroke-opacity=".35" stroke-width="5"/>
+  </g>
+
+  <!-- Status LEDs on each tier. -->
+  <g fill="#fff" filter="url(#glow)">
+    <circle cx="600" cy="422" r="11"/><circle cx="640" cy="415" r="11" opacity=".55"/>
+    <circle cx="600" cy="566" r="11"/><circle cx="640" cy="559" r="11" opacity=".55"/>
+    <circle cx="600" cy="710" r="11"/><circle cx="640" cy="703" r="11" opacity=".55"/>
+  </g>
+
+  <!-- Orbit, front half + comet. -->
+  <g transform="translate(512 520) rotate(-14)">
+    <ellipse rx="380" ry="110" fill="none" stroke="url(#ring)" stroke-width="14" clip-path="url(#front)" filter="url(#glow)"/>
+    <path d="M-60 108.6A380 110 0 0 0 311 63" fill="none" stroke="url(#trail)" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="311" cy="63" r="72" fill="url(#spark)"/>
+    <circle cx="311" cy="63" r="15" fill="#fff"/>
+  </g>
+
+  <rect x="102" y="102" width="820" height="820" rx="182" fill="none" stroke="url(#rim)" stroke-width="4"/>
+</svg>
