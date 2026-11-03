@@ -14,7 +14,7 @@ DataRove 是一个自带定时备份和同步的桌面数据库客户端。它�
 
 **支持的数据库：** MySQL · MariaDB · PostgreSQL · SQLite · SQL Server · MongoDB · Redis，支持 SSH 隧道和 TLS。
 
-> **状态：** 1.0.0。安装包在 [Releases](../../releases) 页面下载，装好后应用会自动更新。可以 Watch 本仓库接收新版本通知。更新记录见 [CHANGELOG](CHANGELOG.md)。
+> **状态：** 1.0.1。安装包在 [Releases](../../releases) 页面下载，装好后应用会自动更新。可以 Watch 本仓库接收新版本通知。更新记录见 [CHANGELOG](CHANGELOG.md)。
 
 ## 4 分钟功能介绍视频
 

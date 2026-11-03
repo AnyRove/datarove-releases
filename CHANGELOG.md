@@ -4,6 +4,18 @@ All notable changes to DataRove are listed here. Versions follow [Semantic Versi
 
 Each release on the [Releases](../../releases) page has installers named `DataRove-<version>-<os>-<arch>.<ext>` (macOS `.dmg` / `.zip`, Windows `.exe`, Linux `.AppImage` / `.deb`, Android `.apk`) and a `SHA256SUMS.txt`. The desktop and Android apps check this repository for updates and verify the checksum before installing.
 
+## [1.0.1] — 2026-11-03
+
+### Sync and backup
+- **Stop** now interrupts the statement running on the database (MySQL `KILL QUERY`, PostgreSQL `pg_cancel_backend`, SQL Server cancel), on both the source and the target, instead of waiting for the current batch. The table being written is rolled back and left as it was.
+- A sync no longer hangs on a target table that another session holds locked. Each statement waits at most 10 seconds for a lock and is retried twice; after that the table is skipped and left unchanged, the log says another session is using it (see **Monitor** for who), and the other tables still sync. Before, it waited indefinitely, and queries queued behind its `TRUNCATE` / `DROP` waited too.
+- Incremental sync warns when the watermark column (e.g. `updated_at`) has no index, because every run then reads the whole table.
+- SQL Server: tables are read page by page along the primary key (`WHERE key > last`) instead of with `OFFSET`, so large tables no longer get slower towards the end. Tables without a primary key are read in one streamed query, which fixes rows that could be missed or read twice. `money` values keep all 4 decimals.
+- MySQL and SQL Server connections are labelled `DataRove` on the server (PostgreSQL already was).
+
+### Query editor
+- **Stop** works on SQL Server queries too.
+
 ## [1.0.0] — 2026-10-30
 
 ### Updates

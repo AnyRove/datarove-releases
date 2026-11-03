@@ -14,7 +14,7 @@ DataRove は、定期バックアップと同期を内蔵したデスクトッ�
 
 **対応データベース：** MySQL · MariaDB · PostgreSQL · SQLite · SQL Server · MongoDB · Redis（SSH トンネル・TLS 対応）
 
-> **ステータス：** 1.0.0。インストーラーは [Releases](../../releases) ページからダウンロードできます。インストール後はアプリが自動で更新されます。新しいバージョンの通知を受け取るにはこのリポジトリを Watch してください。変更履歴は [CHANGELOG](CHANGELOG.md)。
+> **ステータス：** 1.0.1。インストーラーは [Releases](../../releases) ページからダウンロードできます。インストール後はアプリが自動で更新されます。新しいバージョンの通知を受け取るにはこのリポジトリを Watch してください。変更履歴は [CHANGELOG](CHANGELOG.md)。
 
 ## 4 分でわかる機能紹介動画
 

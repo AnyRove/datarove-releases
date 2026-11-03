@@ -14,7 +14,7 @@ DataRove 是內建排程備份與同步的桌面資料庫用戶端。它在你�
 
 **支援的資料庫：** MySQL · MariaDB · PostgreSQL · SQLite · SQL Server · MongoDB · Redis，支援 SSH 通道與 TLS。
 
-> **狀態：** 1.0.0。安裝檔在 [Releases](../../releases) 頁面下載，裝好後應用程式會自動更新。可以 Watch 本儲存庫接收新版本通知。更新紀錄見 [CHANGELOG](CHANGELOG.md)。
+> **狀態：** 1.0.1。安裝檔在 [Releases](../../releases) 頁面下載，裝好後應用程式會自動更新。可以 Watch 本儲存庫接收新版本通知。更新紀錄見 [CHANGELOG](CHANGELOG.md)。
 
 ## 4 分鐘功能介紹影片
 

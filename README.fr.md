@@ -14,7 +14,7 @@ DataRove est un client de bases de données pour ordinateur, avec sauvegardes pl
 
 **Bases de données :** MySQL · MariaDB · PostgreSQL · SQLite · SQL Server · MongoDB · Redis, avec tunnels SSH et TLS.
 
-> **État :** 1.0.0. Les installeurs se téléchargent sur la page [Releases](../../releases) ; ensuite, les applications se mettent à jour d’elles-mêmes. Suivez ce dépôt (« Watch ») pour être averti des nouvelles versions. Historique dans le [CHANGELOG](CHANGELOG.md).
+> **État :** 1.0.1. Les installeurs se téléchargent sur la page [Releases](../../releases) ; ensuite, les applications se mettent à jour d’elles-mêmes. Suivez ce dépôt (« Watch ») pour être averti des nouvelles versions. Historique dans le [CHANGELOG](CHANGELOG.md).
 
 ## Visite guidée en vidéo (4 minutes)
 

@@ -14,7 +14,7 @@ DataRove ist ein Datenbank-Client für den Desktop mit eingebauten, geplanten Ba
 
 **Datenbanken:** MySQL · MariaDB · PostgreSQL · SQLite · SQL Server · MongoDB · Redis, mit SSH-Tunneln und TLS.
 
-> **Status:** 1.0.0. Die Installer gibt es auf der Seite [Releases](../../releases); danach aktualisieren sich die Apps selbst. Mit „Watch“ auf diesem Repository wirst du über neue Versionen benachrichtigt. Änderungen im [CHANGELOG](CHANGELOG.md).
+> **Status:** 1.0.1. Die Installer gibt es auf der Seite [Releases](../../releases); danach aktualisieren sich die Apps selbst. Mit „Watch“ auf diesem Repository wirst du über neue Versionen benachrichtigt. Änderungen im [CHANGELOG](CHANGELOG.md).
 
 ## 4-Minuten-Tour als Video
 

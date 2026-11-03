@@ -14,7 +14,7 @@ O DataRove é um cliente de banco de dados para desktop com backups agendados e 
 
 **Bancos de dados:** MySQL · MariaDB · PostgreSQL · SQLite · SQL Server · MongoDB · Redis, com túneis SSH e TLS.
 
-> **Status:** 1.0.0. Baixe os instaladores na página de [Releases](../../releases); depois disso, os apps se atualizam sozinhos. Clique em “Watch” neste repositório para ser avisado de novas versões. Mudanças no [CHANGELOG](CHANGELOG.md).
+> **Status:** 1.0.1. Baixe os instaladores na página de [Releases](../../releases); depois disso, os apps se atualizam sozinhos. Clique em “Watch” neste repositório para ser avisado de novas versões. Mudanças no [CHANGELOG](CHANGELOG.md).
 
 ## Tour de 4 minutos em vídeo
 

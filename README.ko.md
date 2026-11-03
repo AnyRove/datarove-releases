@@ -14,7 +14,7 @@ DataRove는 예약 백업과 동기화를 기본으로 갖춘 데스크톱 데�
 
 **지원 데이터베이스:** MySQL · MariaDB · PostgreSQL · SQLite · SQL Server · MongoDB · Redis (SSH 터널, TLS 지원)
 
-> **상태:** 1.0.0입니다. 설치 파일은 [Releases](../../releases) 페이지에서 받을 수 있고, 설치한 뒤에는 앱이 스스로 업데이트됩니다. 새 버전 알림을 받으려면 이 저장소를 Watch 하세요. 변경 내역은 [CHANGELOG](CHANGELOG.md)에 있습니다.
+> **상태:** 1.0.1입니다. 설치 파일은 [Releases](../../releases) 페이지에서 받을 수 있고, 설치한 뒤에는 앱이 스스로 업데이트됩니다. 새 버전 알림을 받으려면 이 저장소를 Watch 하세요. 변경 내역은 [CHANGELOG](CHANGELOG.md)에 있습니다.
 
 ## 4분 기능 소개 영상
 
